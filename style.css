@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Default Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Styles */
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    width: 80%;
+    display: flex;
+}
+
+/* Container: Left Portion Styles */
+main .container .left{
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .container .left p{
+    margin-top: 15px;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+/*  Container : Right Portion Styles */
+main .container .right{
+    flex: 55%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+}
+
+main .container .right .top-right{
+    height: 40px;
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 6px #DC6A6A;
+    font-size: 14px;
+    
+}
+
+main .container .right .bottom-right{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 6px #DC6A6A;
+}
+
+/* Input Styles */
+main .container .right .bottom-right form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: hsl(246, 25%, 77%);
+    padding-left: 20px;
+    box-shadow: 2px 2px 2px #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    background-size: 30px 30px;
+}
+
+main .container .right .bottom-right form input[type=submit]{
+    outline: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+}
+
+main .container .right .bottom-right form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+/* Error Message p styles */
+main .container .right .bottom-right form p{
+    color: red;
+    font-size:  10px;
+    display: none;
+    margin-left: auto;
+    width: 35%;
+  }
+
+main .container .right .bottom-right p{
+    margin-top: 5px;
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+ @media screen and (min-width:375px) and (max-width:720px){
+    /* Container Media Query */
+    main .container{
+        width: 80%;
+        flex-direction: column;
+        margin: 0;
+        flex: 50%;
+    } */
+
+
+    /* Container Left Portion Media Query */
+    main .container .left{
+        align-items: center;
+    }
+
+    main .container .left h1{
+        text-align: center;
+    }
+
+    main .container .left p{
+        /* width: 90%; */
+        text-align: center;
+    }
+
+    /* Container : Right Portion Meedia Query */
+    main .container .right{
+        margin: 0;
+    }
+
+    main .container .right .top-right{
+        height: 50px;
+    } 
+
+    main .container .right .bottom-right form p{
+        width: 50%;
+    }
+ } 

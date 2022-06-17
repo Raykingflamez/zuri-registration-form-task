@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="left">
+                <h1>Learn to code by <br> watching others</h1>
+                <p>
+                    See how experienced developers solve problem in real-time. 
+                    Watching scripted tutorials is great, but understanding how developersthinks is invaluable.
+                </p>
+
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+
+                </div>
+                <div class="bottom-right">
+                    <form action="">
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                        <br>
+                        <p id="errorFirstName">First name cannot be empty</p>
+                        <input type="text" name="lasttname" id="lastname" placeholder="Last Name" required> 
+                        <br>
+                        <p id="errorLastName">Last name cannot be empty</p>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <br>
+                        <p id="errorEmail">Email add. cannot be empty</p>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <br>
+                        <p id="errorPassword">Password cannot be empty</p>
+                        <input type="submit" name="submit" id="btn" value="claim your free trial">
+                    </form>
+
+                    <p>By clicking the button you're agreeing to our <span style="color: hsl(0, 100%, 74%);">Terms and Services</span></p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
